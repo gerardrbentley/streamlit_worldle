@@ -232,14 +232,13 @@ A geography guessing game with the following rules:
     - Countries that share a border will **NOT** have 0 km `distance`
     - The maximum `distance` possible is roughly `20000 km` (two points on opposite sides of the globe)
     - The `proximity` percentage is based on the maximum `distance`
-
-### Hints! (Optional)
 """
         )
+        st.write("""Built with ❤️ by [Gerard Bentley](https://tech.gerardbentley.com/). Powered by Python 🐍 + Streamlit 🎈""")
+    with st.expander("Hints! (Optional)", True)
         show_guesses_on_map = st.checkbox("Reveal your guesses on a map (will load an additional map below the mystery country)", False)
         show_on_map = st.checkbox("Reveal the mystery country on a map (will load a map centered on the mystery country", False)
 
-        st.write("""Built with ❤️ by [Gerard Bentley](https://tech.gerardbentley.com/). Powered by Python 🐍 + Streamlit 🎈""")
 
     if not already_won and not show_on_map:
         fig, ax = plt.subplots(figsize=(3, 3))
