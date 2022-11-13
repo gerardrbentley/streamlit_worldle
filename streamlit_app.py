@@ -235,7 +235,7 @@ A geography guessing game with the following rules:
 """
         )
         st.write("""Built with ❤️ by [Gerard Bentley](https://tech.gerardbentley.com/). Powered by Python 🐍 + Streamlit 🎈""")
-    with st.expander("Hints! (Optional)", True)
+    with st.expander("Hints! (Optional)", True):
         show_guesses_on_map = st.checkbox("Reveal your guesses on a map (will load an additional map below the mystery country)", False)
         show_on_map = st.checkbox("Reveal the mystery country on a map (will load a map centered on the mystery country", False)
 
