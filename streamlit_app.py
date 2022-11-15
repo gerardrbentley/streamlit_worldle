@@ -244,6 +244,7 @@ A geography guessing game with the following rules:
         fig, ax = plt.subplots(figsize=(3, 3))
         country = all_locations.loc[[random_location["fid"]]]
         country.plot(ax=ax, figsize=(0.5, 1), legend=True)
+        ax.set_axis_off()
         st.pyplot(fig)
 
     guess_fid = None
